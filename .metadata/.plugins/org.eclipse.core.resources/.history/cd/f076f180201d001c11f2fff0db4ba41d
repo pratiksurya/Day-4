@@ -1,0 +1,40 @@
+package question_2;
+
+import java.util.Scanner;
+
+class Employee{
+	Scanner sc=new Scanner(System.in);
+	private String name;
+	private int year_join;
+	private int salary;
+	private String address;
+	public void accept() {
+		System.out.println("Enter The Name: ");
+		name=sc.next();
+		System.out.println("Enter The Year of Join: ");
+		year_join=sc.nextInt();
+		System.out.println("Enter The Salary: ");
+		salary=sc.nextInt();
+		System.out.println("Enter The Address: ");
+		name=sc.next();
+		
+	}
+	public void disp() {
+		System.out.println("Name\tYear Of Joining\t\tsalary\t\tAddress");
+//		System.out.println(name+"\t"+year_join+"\t\t"+);
+	}
+	
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		Employee emp=new Employee();
+//		emp.accept();
+//		emp.accept();
+//		emp.accept();
+		emp.disp();
+
+	}
+
+}
